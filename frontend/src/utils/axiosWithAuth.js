@@ -7,7 +7,7 @@ const axiosWithAuth = () => {
     headers: {
       Authorization: `Bearer ${token}`
     },
-    baseURL: 'http://127.0.0.1:5000' //CHANGE BASE URL
+    baseURL: 'https://rocket-challenge-joelp.herokuapp.com/' //CHANGE BASE URL
   });
 };
 

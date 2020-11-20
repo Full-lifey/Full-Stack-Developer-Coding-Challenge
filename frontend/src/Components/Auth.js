@@ -47,7 +47,7 @@ export default class Auth extends React.Component {
       error: null,
     });
     axios
-      .post("http://127.0.0.1:5000/signup", this.state.creds)
+      .post("https://rocket-challenge-joelp.herokuapp.com/signup", this.state.creds)
       .then((res) => {
         localStorage.setItem("token", res.data.access_token);
         this.setState({
@@ -74,7 +74,7 @@ export default class Auth extends React.Component {
       error: null,
     });
     axios
-      .post("http://127.0.0.1:5000/login", this.state.creds)
+      .post("https://rocket-challenge-joelp.herokuapp.com/login", this.state.creds)
       .then((res) => {
         localStorage.setItem("token", res.data.access_token);
         this.setState({
